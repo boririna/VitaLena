@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    max-width: 1600px;
+    max-width: 1100px;
     height: 100vh;
 }
 
@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: 'Mulish', sans-serif;
     margin: 0;
+    color: #3D3D3D;
 }
 
 .container {
@@ -36,7 +37,7 @@ p {
 .main-image {
     width: 100%;
     height: 0;
-    padding-top: 67%;
+    padding-top: 66%;
     background-image: url(/img/main_small_dark.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -48,13 +49,13 @@ p {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 20px 80px;
+  padding: 20px 40px;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
 }
     
 nav {
@@ -65,22 +66,32 @@ nav {
 
 .phone-number {
     text-align: right;
-    margin-top: 10px;
-    font-size: 25px;
+    margin-top: 5px;
+    font-size: 17px;
+    
+}
+
+.phone-number p {
+  color: white;
 }
 
 .welcome-text {
     width: 50%;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .welcome-text h1 {
-    font-size: 90px;
+    font-size: 60px;
     margin-bottom: 20px;
 }
 
 .welcome-text p {
-    font-size: 30px;
+    font-size: 21px;
+    color: white;
+}
+
+.mobile {
+  display: none;
 }
 
 ul {
@@ -94,7 +105,7 @@ ul {
   li a {
     display: block;
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Mulish', sans-serif;
     text-decoration: none;
     color: white;
@@ -105,14 +116,15 @@ ul {
   }
 
   .header-buttons{
-    padding-top: 300px;
+    padding-top: 250px;
+    padding-right: 50px;
     text-align: right;
   }
 
   .button-grey {
-    width: 300px;
+    width: 180px;
     text-align: center;
-    padding: 18px 0px;
+    padding: 12px 0px;
     border-radius: 4px;
     border: none;
     background-color: #8E9AAF;
@@ -120,7 +132,7 @@ ul {
     text-decoration: none;
     display: inline-block;
     font-family: 'Philosopher', sans-serif;
-    font-size: 24px;
+    font-size: 15px;
   }
 
   .button-grey:hover {
@@ -130,9 +142,9 @@ ul {
   }
 
   .button-pink {
-    width: 300px;
+    width: 180px;
     text-align: center;
-    padding: 18px 0px;
+    padding: 12px 0px;
     margin-left: 20px;
     border-radius: 4px;
     border: none;
@@ -141,7 +153,7 @@ ul {
     text-decoration: none;
     display: inline-block;
     font-family: 'Philosopher', sans-serif;
-    font-size: 24px;
+    font-size: 15px;
   }
 
   .button-pink:hover {
@@ -153,7 +165,7 @@ ul {
 /* Contacts */
 
 .contacts {
-  padding: 20px 30px;
+  padding: 50px 30px;
   text-align: center;
   font-size: 20px;
 }
@@ -168,19 +180,29 @@ ul {
   padding-top: 20px;
 }
 
-.address div {
+ .addr-items {
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
 }
 
+.icon-text {
+  display: flex;
+  gap: 10px;
+}
+
+.addr-icon {
+  color: #8E9AAF;
+  font-size: 24px;
+}
+
 .address a {
-  color:black;
+  color: #3D3D3D;
 }
 
 /* footer */
 .footer {
-  padding: 20px 30px;
+  padding: 50px 30px;
   background-color: #CBC0D3;
   text-align: center;
 }
@@ -200,7 +222,7 @@ ul {
  }
 
  .copiright {
-  margin-top: 50px;
+  margin-top: 120px;
  }
 
 
@@ -228,6 +250,10 @@ ul {
 
 
   @media (max-width: 600px) {
+    .banner-content {
+      padding: 10px 20px;
+    }
+
     .banner-content .header-menu {
         display: none;
     }
@@ -236,43 +262,68 @@ ul {
         font-size: medium;
     }
 
-    .footer li a {
-      font-size: 10px;
+    nav a {
+      font-size: 20px;
     }
 
+    .footer a {
+      font-size: 20px;
+    }
+
+    .footer li a {
+      font-size: 16px;
+      padding: 6px;
+    }
+      
     .phone-number {
       margin-top: 10px;
-      font-size: 10px;
-  }
+      font-size: 14px;
+    }
 
     .welcome-text {
         width: 75%;
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     .welcome-text h1 {
-        font-size: 25px;
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .welcome-text .desktop {
+        display: none;
+    }
+
+    .mobile {
+      display: block;
+      font-size: 0px;
     }
 
     .welcome-text p {
-        font-size: 10px;
+      font-size: 18px;
     }
 
     .header-buttons{
-        padding-top: 40px;
+        padding-top: 50px;
+        padding-right: 0;
+        text-align: right;
       }
 
-      .button-grey {
-        width: 100px;
-        font-size: 9px;
-        padding: 8px 0;
-       
-      }
-    
-      .button-pink {
-        width: 100px;
-        font-size: 9px;
-        padding: 8px 0;
-        margin-left: 10px;
-      }
+    .button-grey {
+      width: 120px;
+      font-size: 12px;
+      padding: 8px 0;
+      display: block;
+      margin-left: auto;
+      margin-bottom: 5px;
+    }
+  
+    .button-pink {
+      width: 120px;
+      font-size: 12px;
+      padding: 8px 0;
+      margin-left: 5px;
+      display: block;
+      margin-left: auto;
+    }
   }
