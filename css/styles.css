@@ -82,9 +82,9 @@ nav {
 
 }
 
-.phone-number p {
+/* .phone-number p {
   color: white;
-}
+} */
 
 .welcome-text {
   width: 50%;
@@ -97,8 +97,9 @@ nav {
 }
 
 .welcome-text p {
-  font-size: 21px;
+  font-size: 22px;
   color: white;
+  font-weight: 600;
 }
 
 .mobile {
