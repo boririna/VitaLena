@@ -209,11 +209,20 @@ h2 {
 .icon-text {
   display: flex;
   gap: 10px;
+  margin-bottom: 8px;
+}
+
+.icon-text-last {
+  margin-bottom: 0px;
 }
 
 .addr-icon {
   color: #8E9AAF;
   font-size: 24px;
+}
+
+.home-icon {
+  font-size: 29px;
 }
 
 .address a {
