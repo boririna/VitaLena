@@ -128,7 +128,7 @@ li :last-child {
 }
 
 .header-buttons {
-  padding-top: 250px;
+  padding-top: 280px;
   padding-right: 50px;
   text-align: right;
 }
@@ -340,7 +340,8 @@ h2 {
   }
 
   .logo {
-    width: 100px;
+    width: 90px;
+    margin-bottom: 8px;
   }
 
   .phone-number {
@@ -372,7 +373,7 @@ h2 {
   }
 
   .header-buttons {
-    padding-top: 10px;
+    padding-top: 22px;
     padding-right: 0;
     text-align: right;
   }
