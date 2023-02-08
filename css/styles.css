@@ -419,7 +419,11 @@ h2 {
   }
 
   .addr-icon {
-    font-size: 12px;
+    font-size: 13px;
+  }
+
+  .home-icon {
+    font-size: 17px;
   }
 
   .quote {
