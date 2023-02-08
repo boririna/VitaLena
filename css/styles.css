@@ -288,6 +288,10 @@ h2 {
 
 /* footer */
 
+.footer-logo {
+  width: 140px;
+}
+
 .footer {
   padding: 40px 40px;
   background-color: #CBC0D3;
@@ -465,6 +469,10 @@ h2 {
 
   .footer {
     padding: 20px 20px;
+  }
+
+  .footer-logo {
+    width: 90px;
   }
 
   .emr {
