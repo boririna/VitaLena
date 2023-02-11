@@ -83,6 +83,10 @@ nav {
   align-items: center;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .phone-number {
   text-align: right;
   margin-top: 5px;
@@ -213,6 +217,10 @@ h2 {
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.addr-place {
+  margin-bottom: 5px;
 }
 
 .icon-text {
@@ -357,6 +365,16 @@ h2 {
   .banner-content .header-menu {
     display: none;
   }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hamburger {
+    font-size: 25px;
+    font-weight: 100;
+  }
+  
 
   .logo {
     width: 90px;
