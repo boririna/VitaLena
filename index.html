@@ -64,7 +64,17 @@
                   <a href="#contact">Kontakte</a>
                 </div>
                 
-                <button class="openbtn" onclick="openNav()">☰</button> 
+                <button class="openbtn" onclick="openNav()">☰</button>
+
+                <script>
+                  function openNav() {
+                   document.getElementById("mySidepanel").style.width = "50%";
+                 }
+             
+                 function closeNav() {
+                   document.getElementById("mySidepanel").style.width = "0";
+                 }
+               </script>
               </div>
             </nav>
 
@@ -230,16 +240,6 @@
     </div>
     
 </div>
-  <script>
-     function openNav() {
-      document.getElementById("mySidepanel").style.width = "50%";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidepanel").style.width = "0";
-    }
-  </script>
-  
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
