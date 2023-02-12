@@ -53,12 +53,19 @@
               </ul>
 
               <div class="hamburger-menu">
-                <a>
+                <!-- <a>
                   <i class="fa fa-bars hamburger" aria-hidden="true"></i>
-                </a>
+                </a> -->
+                <div id="mySidepanel" class="sidepanel">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                  <a href="#home">Home</a>
+                  <a href="#about">Über mich</a>
+                  <a href="#massage">Massage</a>
+                  <a href="#contact">Kontakte</a>
+                </div>
+                
+                <button class="openbtn" onclick="openNav()">☰</button> 
               </div>
-              
-              
             </nav>
 
             <!-- <div class="phone-number">
@@ -215,7 +222,7 @@
       <a href="https://emr.ch/therapeut/elena.schaller" target="_blank">
         <p>Krankenkassen anerkannt (Zusatzversicherung)</p>
       </a>
-      <p class="copiright">
+      <p class="copyright">
         <a href="https://troopl.com/iaborisova" target="_blank">
           Copyright ©2023 All rights reserved | This website is made by Irina Borisova
         </a>
@@ -229,6 +236,14 @@
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "50%";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
