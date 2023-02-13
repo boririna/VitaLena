@@ -29,33 +29,6 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <meta name="theme-color" content="#fafafa">
-
-  <!-- <script>
-    const btnEl = document.getElementById("openbtn");
-
-    btnEl.addEventListener('click', openNav);
-
-    function openNav() {
-      document.getElementById("mySidepanel").style.width = "50%";
-    }
-
-    const btnEl2 = document.getElementById("closebtn");
-
-    btnEl2.addEventListener('click', closeNav);
-
-    function closeNav() {
-      document.getElementById("mySidepanel").style.width = "0";
-    }
-
-
-    function openNav() {
-     document.getElementById("mySidepanel").style.width = "50%";
-   }
-
-   function closeNav() {
-     document.getElementById("mySidepanel").style.width = "0";
-   }
- </script> -->
 </head>
 
 <body>
@@ -80,9 +53,6 @@
               </ul>
 
               <div class="hamburger-menu">
-                <!-- <a>
-                  <i class="fa fa-bars hamburger" aria-hidden="true"></i>
-                </a> -->
 
                 <div id="mySidepanel" class="sidepanel">
 
@@ -252,9 +222,6 @@
       <a href="https://emr.ch/therapeut/elena.schaller" target="_blank">
         <p>Krankenkassen anerkannt (Zusatzversicherung)</p>
       </a>
-      <button onClick="console.log(123)">
-        Button
-      </button>
       <p class="copyright">
         <a href="https://troopl.com/iaborisova" target="_blank">
           Copyright ©2023 All rights reserved | This website is made by Irina Borisova
@@ -266,13 +233,8 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/handlers.js"></script>
-
+ 
   <script>
-    //Import your module
-    // import openNav from "./js/handlers.js";
-
-    //Assign event listener to button
     const openNav = function () {
     document.getElementById("mySidepanel").style.width = "50%";
     }
@@ -286,22 +248,22 @@
       .addEventListener("click", function (event) {
         openNav();
       });
-    console.log("something", openNav);
+  
     document
       .getElementById("closeBtn")
       .addEventListener("click", function (event) {
         closeNav();
       });
-      console.log("something", closeNav);
-    /* JavaScript module code here */
   </script>
 
+  <!-- TODO enable Analytics -->
+
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
+  <!-- <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </script> -->
+  <!-- <script src="https://www.google-analytics.com/analytics.js" async></script> -->
 </body>
 
 </html>
