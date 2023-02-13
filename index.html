@@ -30,7 +30,7 @@
 
   <meta name="theme-color" content="#fafafa">
 
-  <script>
+  <!-- <script>
     // const btnEl = document.querySelector("openbtn");
 
     // btnEl.addEventListener('click', openNav);
@@ -55,7 +55,7 @@
    function closeNav() {
      document.getElementById("mySidepanel").style.width = "0";
    }
- </script>
+ </script> -->
 </head>
 
 <body>
@@ -83,8 +83,19 @@
                 <!-- <a>
                   <i class="fa fa-bars hamburger" aria-hidden="true"></i>
                 </a> -->
+                <script>
+                
+                  function openNav() {
+                   document.getElementById("mySidepanel").style.width = "50%";
+                 }
+              
+                 function closeNav() {
+                   document.getElementById("mySidepanel").style.width = "0";
+                 }
+               </script>
 
                 <div id="mySidepanel" class="sidepanel">
+                  
 
                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                   <a href="#home">Home</a>
