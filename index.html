@@ -30,12 +30,6 @@
 
   <meta name="theme-color" content="#fafafa">
 
-  <script>
-    const op = openNav;
-    const cl = closeNav;
-    console.log(op)
-  </script>
-
   <!-- <script>
     const btnEl = document.getElementById("openbtn");
 
@@ -91,16 +85,15 @@
                 </a> -->
 
                 <div id="mySidepanel" class="sidepanel">
-                  
 
-                  <a href="#" class="closebtn" onclick="closeNav();">×</a>
+                  <a id="closeBtn" href="#" class="closebtn" >×</a>
                   <a href="#home">Home</a>
                   <a href="#about">Über mich</a>
                   <a href="#massage">Massage</a>
                   <a href="#contact">Kontakte</a>
                 </div>
                 
-                <button class="openbtn" onclick="openNav();">☰</button>
+                <button id="openBtn" class="openbtn">☰</button>
               </div>
             </nav>
 
@@ -274,6 +267,34 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/handlers.js"></script>
+
+  <script>
+    //Import your module
+    // import openNav from "./js/handlers.js";
+
+    //Assign event listener to button
+    const openNav = function () {
+    document.getElementById("mySidepanel").style.width = "50%";
+    }
+
+    const closeNav = function () {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+
+    document
+      .getElementById("openBtn")
+      .addEventListener("click", function (event) {
+        openNav();
+      });
+    console.log("something", openNav);
+    document
+      .getElementById("closeBtn")
+      .addEventListener("click", function (event) {
+        closeNav();
+      });
+      console.log("something", closeNav);
+    /* JavaScript module code here */
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
