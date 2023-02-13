@@ -19,6 +19,8 @@
   <!-- Place favicon.ico in the root directory -->
   <script src="https://use.fontawesome.com/d74abba44e.js"></script>
 
+  <script src="js/handlers.js"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;500&family=Mulish:wght@300;400;500;600;700&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
@@ -31,21 +33,21 @@
   <meta name="theme-color" content="#fafafa">
 
   <!-- <script>
-    // const btnEl = document.querySelector("openbtn");
+    const btnEl = document.getElementById("openbtn");
 
-    // btnEl.addEventListener('click', openNav);
+    btnEl.addEventListener('click', openNav);
 
-    // function openNav() {
-    //   document.getElementById("mySidepanel").style.width = "50%";
-    // }
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "50%";
+    }
 
-    // const btnEl2 = document.querySelector("closebtn");
+    const btnEl2 = document.getElementById("closebtn");
 
-    // btnEl2.addEventListener('click', closeNav);
+    btnEl2.addEventListener('click', closeNav);
 
-    // function closeNav() {
-    //   document.getElementById("mySidepanel").style.width = "0";
-    // }
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
 
 
     function openNav() {
@@ -83,16 +85,6 @@
                 <!-- <a>
                   <i class="fa fa-bars hamburger" aria-hidden="true"></i>
                 </a> -->
-                <script>
-                
-                  function openNav() {
-                   document.getElementById("mySidepanel").style.width = "50%";
-                 }
-              
-                 function closeNav() {
-                   document.getElementById("mySidepanel").style.width = "0";
-                 }
-               </script>
 
                 <div id="mySidepanel" class="sidepanel">
                   
@@ -202,7 +194,8 @@
       <p>„Die Gesundheit überwiegt alle äußeren Güter so sehr, dass ein gesunder Bettler glücklicher als ein kranker König ist.“</p>
       <p>Arthur Schopenhauer</p>
     </div>
-    <!-- Cards with msaage types -->
+    
+    <!-- Cards with massage types -->
     <div class="cards">
       <h1>Behandlungen</h1>
       <div class="card-row">
